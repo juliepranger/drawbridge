@@ -1,0 +1,88 @@
+section.introduction {
+    z-index: 1;
+    height: 685px;
+    box-sizing: border-box;
+
+    h2 {
+        color: $white;
+        margin-top: 5px;
+        font-size: $font-size-1;
+        letter-spacing: 1.25px;
+    }
+
+    .inner-container {
+        margin-top: 100px;
+    }
+}
+
+.bg-hero {
+    @include bg-image('../images/bg_2x.jpg');
+    height: 685px;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+code {
+    border: 1px solid $white;
+    background-color: $white;
+    color: $code-gray;
+    padding: 10px 15px;
+}
+
+.code-container {
+    margin: 25px auto 20px;
+    text-align: center;
+}
+
+.two-col {
+    margin-top: 60px;
+}
+
+.instruction-container {
+
+    p,
+    .subsection,
+    .code-container,
+    .subheader,
+    .btn-container {
+        text-align: left;
+        width: 340px;
+    }
+
+    .btn-container {
+        text-align: right;
+        margin: 0 auto;
+    }
+
+    .subheader {
+        margin: 20px auto;
+    }
+}
+
+.instruction-container:first-of-type {
+    a.button {
+        margin-top: 35px;
+    }
+}
+
+.instruction-container:last-of-type {
+    border-left: 1px solid $border-gray;
+
+    h4 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: $break-med) {
+
+    section.introduction h2:first-of-type {
+        text-align: center;
+    }
+
+    .two-col.instruction-container {
+        border-left: none;
+    }
+}
