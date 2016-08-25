@@ -78,11 +78,24 @@ code {
 
 @media screen and (max-width: $break-med) {
 
+    section.introduction .inner-container {
+        margin-top: 40px;
+    }
+
     section.introduction h2:first-of-type {
         text-align: center;
     }
 
-    .two-col.instruction-container {
+    .two-col.instruction-container,
+    .instruction-container p, .instruction-container .subsection, .instruction-container .code-container, .instruction-container .subheader {
         border-left: none;
+        width: 90%;
+        text-align: center;
+        margin: 20px auto;
+
+        .btn-container {
+            width: 100%;
+            text-align: center;
+        }
     }
 }

@@ -290,11 +290,38 @@ code {
     margin-top: 0; }
 
 @media screen and (max-width: 769px) {
+  section.introduction .inner-container {
+    margin-top: 40px; }
+
   section.introduction h2:first-of-type {
     text-align: center; }
 
-  .two-col.instruction-container {
-    border-left: none; } }
+  .two-col.instruction-container,
+  .instruction-container p, .instruction-container .subsection, .instruction-container .code-container, .instruction-container .subheader {
+    border-left: none;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto; }
+    .two-col.instruction-container .btn-container,
+    .instruction-container p .btn-container, .instruction-container .subsection .btn-container, .instruction-container .code-container .btn-container, .instruction-container .subheader .btn-container {
+      width: 100%;
+      text-align: center; } }
+.security h4 {
+  font-weight: bold; }
+.security h4,
+.security .subsection {
+  max-width: 390px;
+  margin: 20px 0; }
+
+@media screen and (max-width: 769px) {
+  .security .two-col .subheader {
+    text-align: center; }
+  .security h2,
+  .security h4,
+  .security .subsection {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center; } }
 footer {
   padding: 35px 0;
   position: absolute;
