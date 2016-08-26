@@ -1,0 +1,19 @@
+.how-it-works-diagram {
+    @include bg-image('../images/diagram_2x.png');
+    width: 870px;
+    height: 251px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 30px auto 0;
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: $break-med) {
+
+    .how-it-works-diagram {
+        @include bg-image('../images/diagram_vertical_2x.png');
+        height: 687px;
+        width: 300px;
+    }
+}

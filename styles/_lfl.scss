@@ -1,0 +1,18 @@
+.lfl {
+
+    .lfl-logo {
+        margin: 0 auto;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: $break-med) {
+
+    .lfl {
+
+        .lfl-logo,
+        .lfl-logo + .subsection {
+            margin-bottom: 30px;
+        }
+    }
+}

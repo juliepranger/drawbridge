@@ -18,7 +18,11 @@
         .two-col .subheader {
             text-align: center;
         }
-        
+
+        .two-col:first-of-type {
+            margin-top: 0;
+        }
+
         h2,
         h4,
         .subsection {

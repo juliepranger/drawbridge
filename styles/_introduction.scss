@@ -78,8 +78,17 @@ code {
 
 @media screen and (max-width: $break-med) {
 
-    section.introduction .inner-container {
-        margin-top: 40px;
+    section.introduction h2 {
+        font-size: $font-size-2;
+    }
+
+    section.introduction .subsection {
+        margin-bottom: 30px;
+    }
+
+    .instruction-container:first-of-type a.button {
+        margin-top: 0;
+        margin-bottom: 15px;
     }
 
     section.introduction h2:first-of-type {

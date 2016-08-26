@@ -126,6 +126,20 @@ section.introduction h1,
 section.introduction p {
   color: #fff; }
 
+@media screen and (max-width: 769px) {
+  h1 {
+    font-size: 38px;
+    letter-spacing: 1.25px; }
+
+  h2 {
+    font-size: 32px; }
+
+  h3 {
+    font-size: 20px; }
+
+  a.button {
+    font-size: 18px;
+    padding: 9px 28px; } }
 header {
   position: fixed;
   z-index: 2;
@@ -142,10 +156,31 @@ header {
 
 header h1 {
   color: #fff;
+  display: inline-block;
   font-size: 32px;
   z-index: 1;
   position: relative;
-  text-align: left; }
+  text-align: left;
+  vertical-align: top;
+  margin-top: 25px;
+  font-weight: 300; }
+
+.logo {
+  display: inline-block;
+  background-image: url("../images/drawbridge_logo_2x.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  height: 60px;
+  width: 45px;
+  background-repeat: no-repeat;
+  margin: 10px;
+  vertical-align: top;
+  position: relative; }
 
 body {
   margin: 0; }
@@ -213,23 +248,28 @@ section:last-of-type {
 .cta {
   margin-top: 40px; }
 
-.lfl-logo {
-  margin: 0 auto;
-  width: 100px; }
-
 @media screen and (max-width: 769px) {
+  section {
+    padding: 40px 15px; }
+
   section h1, section h2 {
-    text-align: center; }
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 30px; }
 
   .feature-container p {
     padding: 0; }
 
-  .instruction-container p,
-  .instruction-container .subsection,
-  .instruction-container .code-container,
-  .instruction-container .subheader {
+  p,
+  .subsection,
+  .code-container,
+  .subheader {
     text-align: center;
-    width: 90%; } }
+    width: 90%;
+    margin: 0 auto; }
+
+  .subheader {
+    margin-bottom: 30px; } }
 section.introduction {
   z-index: 1;
   height: 685px;
@@ -290,8 +330,15 @@ code {
     margin-top: 0; }
 
 @media screen and (max-width: 769px) {
-  section.introduction .inner-container {
-    margin-top: 40px; }
+  section.introduction h2 {
+    font-size: 38px; }
+
+  section.introduction .subsection {
+    margin-bottom: 30px; }
+
+  .instruction-container:first-of-type a.button {
+    margin-top: 0;
+    margin-bottom: 15px; }
 
   section.introduction h2:first-of-type {
     text-align: center; }
@@ -306,6 +353,28 @@ code {
     .instruction-container p .btn-container, .instruction-container .subsection .btn-container, .instruction-container .code-container .btn-container, .instruction-container .subheader .btn-container {
       width: 100%;
       text-align: center; } }
+.how-it-works-diagram {
+  background-image: url("../images/diagram_2x.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  width: 870px;
+  height: 251px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 30px auto 0;
+  max-width: 100%; }
+
+@media screen and (max-width: 769px) {
+  .how-it-works-diagram {
+    background-image: url("../images/diagram_vertical_2x.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    height: 687px;
+    width: 300px; } }
 .security h4 {
   font-weight: bold; }
 .security h4,
@@ -316,12 +385,22 @@ code {
 @media screen and (max-width: 769px) {
   .security .two-col .subheader {
     text-align: center; }
+  .security .two-col:first-of-type {
+    margin-top: 0; }
   .security h2,
   .security h4,
   .security .subsection {
     width: 90%;
     margin: 20px auto;
     text-align: center; } }
+.lfl .lfl-logo {
+  margin: 0 auto;
+  width: 100px; }
+
+@media screen and (max-width: 769px) {
+  .lfl .lfl-logo,
+  .lfl .lfl-logo + .subsection {
+    margin-bottom: 30px; } }
 footer {
   padding: 35px 0;
   position: absolute;

@@ -92,14 +92,17 @@ section:last-of-type {
     margin-top: 40px;
 }
 
-.lfl-logo {
-    margin: 0 auto;
-    width: 100px;
-}
 @media screen and (max-width: $break-med) {
+
+
+    section {
+        padding: 40px 15px;
+    }
 
     section h1, section h2 {
         text-align: center;
+        font-size: $font-size-2;
+        margin-bottom: 30px;
     }
 
     .feature-container {
@@ -109,13 +112,16 @@ section:last-of-type {
         }
     }
 
-    .instruction-container {
-        p,
-        .subsection,
-        .code-container,
-        .subheader {
-            text-align: center;
-            width: 90%;
-        }
+    p,
+    .subsection,
+    .code-container,
+    .subheader {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .subheader {
+        margin-bottom: 30px;
     }
 }
