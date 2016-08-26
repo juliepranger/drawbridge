@@ -78,10 +78,6 @@ code {
 
 @media screen and (max-width: $break-med) {
 
-    section.introduction h2 {
-        font-size: $font-size-2;
-    }
-
     section.introduction .subsection {
         margin-bottom: 30px;
     }
@@ -92,7 +88,10 @@ code {
     }
 
     section.introduction h2:first-of-type {
+        font-size: $font-size-2;
         text-align: center;
+        width: 90%;
+        margin: 0 auto 30px;
     }
 
     .two-col.instruction-container,

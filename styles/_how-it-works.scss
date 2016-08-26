@@ -8,6 +8,16 @@
     max-width: 100%;
 }
 
+.diagram-drawbridge {
+    @include bg-image('../images/drawbridge_logo_diagram_2x.gif');
+    height: 140px;
+    width: 105px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 30px auto 0;
+    padding: 15px;
+}
+
 
 @media screen and (max-width: $break-med) {
 
@@ -15,5 +25,12 @@
         @include bg-image('../images/diagram_vertical_2x.png');
         height: 687px;
         width: 300px;
+    }
+
+    .diagram-drawbridge {
+        position: absolute;
+        margin-left: -68px;
+        left: 50%;
+        top: 43%;
     }
 }

@@ -17,12 +17,24 @@
 .four-col {
   width: 24%; }
 
+.desktop {
+  display: block; }
+
+.mobile {
+  display: none; }
+
 @media screen and (max-width: 769px) {
   .two-col,
   .three-col,
   .four-col {
     display: block;
-    width: 90%; } }
+    width: 90%; }
+
+  .desktop {
+    display: none; }
+
+  .mobile {
+    display: block; } }
 /* Grayscale */
 /* Active + Bright */
 /* use only global font size mixins  for consistency */
@@ -330,9 +342,6 @@ code {
     margin-top: 0; }
 
 @media screen and (max-width: 769px) {
-  section.introduction h2 {
-    font-size: 38px; }
-
   section.introduction .subsection {
     margin-bottom: 30px; }
 
@@ -341,7 +350,10 @@ code {
     margin-bottom: 15px; }
 
   section.introduction h2:first-of-type {
-    text-align: center; }
+    font-size: 38px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 30px; }
 
   .two-col.instruction-container,
   .instruction-container p, .instruction-container .subsection, .instruction-container .code-container, .instruction-container .subheader {
@@ -366,6 +378,19 @@ code {
   margin: 30px auto 0;
   max-width: 100%; }
 
+.diagram-drawbridge {
+  background-image: url("../images/drawbridge_logo_diagram_2x.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  height: 140px;
+  width: 105px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 30px auto 0;
+  padding: 15px; }
+
 @media screen and (max-width: 769px) {
   .how-it-works-diagram {
     background-image: url("../images/diagram_vertical_2x.png");
@@ -374,19 +399,29 @@ code {
     height: 100%;
     width: 100%;
     height: 687px;
-    width: 300px; } }
+    width: 300px; }
+
+  .diagram-drawbridge {
+    position: absolute;
+    margin-left: -68px;
+    left: 50%;
+    top: 43%; } }
 .security h4 {
   font-weight: bold; }
 .security h4,
 .security .subsection {
   max-width: 390px;
   margin: 20px 0; }
+.security img.mobile {
+  margin: 0 auto; }
 
 @media screen and (max-width: 769px) {
   .security .two-col .subheader {
     text-align: center; }
   .security .two-col:first-of-type {
     margin-top: 0; }
+  .security .two-col:last-of-type {
+    margin-top: 40px; }
   .security h2,
   .security h4,
   .security .subsection {
@@ -394,13 +429,21 @@ code {
     margin: 20px auto;
     text-align: center; } }
 .lfl .lfl-logo {
+  background-image: url("../images/lfl_logo_2x.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 0 auto;
-  width: 100px; }
+  height: 101px;
+  width: 78px; }
 
 @media screen and (max-width: 769px) {
   .lfl .lfl-logo,
   .lfl .lfl-logo + .subsection {
-    margin-bottom: 30px; } }
+    margin-bottom: 20px; } }
 footer {
   padding: 35px 0;
   position: absolute;

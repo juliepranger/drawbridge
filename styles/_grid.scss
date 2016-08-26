@@ -20,6 +20,14 @@
     width: 24%;
 }
 
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
 
 @media screen and (max-width: $break-med) {
 
@@ -28,5 +36,13 @@
     .four-col {
         display: block;
         width: 90%;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
     }
 }

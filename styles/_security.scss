@@ -8,6 +8,10 @@
         max-width: 390px;
         margin: 20px 0;
     }
+
+    img.mobile {
+        margin: 0 auto;
+    }
 }
 
 
@@ -21,6 +25,10 @@
 
         .two-col:first-of-type {
             margin-top: 0;
+        }
+
+        .two-col:last-of-type {
+            margin-top: 40px;
         }
 
         h2,
