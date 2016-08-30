@@ -9,13 +9,16 @@
 }
 
 .diagram-drawbridge {
-    @include bg-image('../images/drawbridge_logo_diagram_2x.gif');
+    opacity: 0;
     height: 140px;
-    width: 105px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 30px auto 0;
-    padding: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -93px;
+    @include prefix(transition, all 250ms ease-in-out);
+
+    &.active {
+        opacity: 1;
+    }
 }
 
 
@@ -29,8 +32,16 @@
 
     .diagram-drawbridge {
         position: absolute;
-        margin-left: -68px;
         left: 50%;
-        top: 43%;
+        top: 50%;
+        margin-left: -80px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .diagram-drawbridge {
+        top: 52%;
     }
 }
