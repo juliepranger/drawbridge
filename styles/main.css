@@ -97,7 +97,7 @@ li {
   line-height: 24px; }
 
 .small {
-  font-size: 10px; }
+  font-size: 12px; }
 
 a, a:hover, a:active, a:visited {
   text-decoration: none;
@@ -190,7 +190,7 @@ header h1 {
   height: 60px;
   width: 45px;
   background-repeat: no-repeat;
-  margin: 10px;
+  margin: 10px 10px 10px 18px;
   vertical-align: top;
   position: relative; }
 
@@ -216,7 +216,6 @@ body {
 
 section {
   padding: 80px 15px;
-  margin: 0 -15px;
   border-bottom: 1px solid #eef1f4; }
   section h2 {
     margin-top: 5px;
@@ -364,7 +363,22 @@ code {
     .two-col.instruction-container .btn-container,
     .instruction-container p .btn-container, .instruction-container .subsection .btn-container, .instruction-container .code-container .btn-container, .instruction-container .subheader .btn-container {
       width: 100%;
-      text-align: center; } }
+      text-align: center; }
+
+  .instruction-container:last-of-type {
+    margin-top: 30px; }
+
+  .instruction-container:last-of-type p,
+  .instruction-container:last-of-type .code-container,
+  .instruction-container:last-of-type .subheader {
+    text-align: left;
+    margin: 5px auto; }
+
+  .instruction-container:last-of-type .subheader {
+    margin-bottom: 20px; }
+
+  .instruction-container:last-of-type .code-container {
+    margin-top: 20px; } }
 .how-it-works-diagram {
   background-image: url("../images/diagram_2x.png");
   background-size: cover;

@@ -106,4 +106,23 @@ code {
             text-align: center;
         }
     }
+
+    .instruction-container:last-of-type {
+        margin-top: 30px;
+    }
+
+    .instruction-container:last-of-type p,
+    .instruction-container:last-of-type .code-container,
+    .instruction-container:last-of-type .subheader {
+        text-align: left;
+        margin: 5px auto;
+    }
+
+    .instruction-container:last-of-type .subheader {
+        margin-bottom: 20px;
+    }
+    
+    .instruction-container:last-of-type .code-container {
+        margin-top: 20px;
+    }
 }
