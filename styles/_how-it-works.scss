@@ -8,16 +8,30 @@
     max-width: 100%;
 }
 
+.diagram-drawbridge-placeholder,
 .diagram-drawbridge {
-    opacity: 0;
     height: 140px;
     position: absolute;
     left: 50%;
     margin-left: -93px;
     @include prefix(transition, all 250ms ease-in-out);
+}
+
+.diagram-drawbridge-placeholder {
+    opacity: 1;
+
+    &.hide {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+.diagram-drawbridge {
+    opacity: 0;
 
     &.active {
         opacity: 1;
+        z-index: 1;
     }
 }
 
@@ -30,6 +44,7 @@
         width: 300px;
     }
 
+    .diagram-drawbridge-placeholder,
     .diagram-drawbridge {
         position: absolute;
         left: 50%;
@@ -41,6 +56,7 @@
 
 @media screen and (max-width: 420px) {
 
+    .diagram-drawbridge-placeholder,
     .diagram-drawbridge {
         top: 52%;
     }
