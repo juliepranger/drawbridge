@@ -1,7 +1,7 @@
 var Drawbridge = function() {
 
     this.howItWorksSection = document.querySelector('.how-it-works');
-    this.howItWorksOffset = this.howItWorksSection.offsetTop - 200;
+    this.howItWorksOffset = this.howItWorksSection.offsetTop - 300;
 
     this.drawbridgeGif = document.querySelector('.diagram-drawbridge');
     this.drawbridgePlaceholder = document.querySelector('.diagram-drawbridge-placeholder');
